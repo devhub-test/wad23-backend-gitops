@@ -1,0 +1,15 @@
+app:
+  name: wad23-poi-backend-app
+  namespace: wad23
+  cluster: .apps.redhatdevhub.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-test/wad23-backend
+  org: devhub-test
+  name: wad23-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: wad23/poi-backend-app
+  tag: latest
